@@ -180,7 +180,20 @@ public class Login extends javax.swing.JFrame {
     private void BtnInicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioSesionActionPerformed
         String usuario = this.TxtUser.getText();  
     String contrasena = new String(this.TxtPswd.getPassword());  
-    iniciarSesion(usuario, contrasena);  // Inicia sesión con los datos ingresados
+    String nivelAcceso = this.TxtNivelAcceso.getText(); // Asegúrate de tener este campo en tu formulario
+
+    // Validar el nivel de acceso
+    if (!nivelAcceso.equalsIgnoreCase("Administrador") &&
+        !nivelAcceso.equalsIgnoreCase("Veterinario")) {
+        JOptionPane.showMessageDialog(this,
+                "Nivel de acceso inválido. Debe ser 'Administrador' o 'Veterinario'.",
+                "Error de acceso",
+                JOptionPane.ERROR_MESSAGE);
+        return;  // Detener el flujo si el nivel no es correcto
+    }
+
+    // Continuar con el inicio de sesión
+    iniciarSesion(usuario, contrasena);
     }//GEN-LAST:event_BtnInicioSesionActionPerformed
 
     private void BtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCancelarActionPerformed

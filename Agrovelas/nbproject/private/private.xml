@@ -3,14 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Agrovelas/src/Conexion/Conectar.java</file>
-            <file>file:/D:/Agrovelas/src/Formularios/FrmClientes.java</file>
-            <file>file:/D:/Agrovelas/src/Views/SearchProductos.java</file>
-            <file>file:/D:/Agrovelas/src/Formularios/FrmProductos.java</file>
-            <file>file:/D:/Agrovelas/src/Formularios/FrmMascotas.java</file>
-            <file>file:/D:/Agrovelas/src/Views/FrmMenu.java</file>
-            <file>file:/D:/Agrovelas/src/Formularios/FrmProveedores.java</file>
-            <file>file:/D:/Agrovelas/src/Formularios/Login.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Views/FrmMenu.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Formularios/Login.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Formularios/FrmMascotas.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Views/SearchClientes.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Views/SearchProductos.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Formularios/FrmProveedores.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Formularios/FrmProductos.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Views/SearchMascota.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Views/FrmVentas.java</file>
+            <file>file:/D:/poo/Agrovelas/src/Conexion/Conectar.java</file>
         </group>
     </open-files>
 </project-private>

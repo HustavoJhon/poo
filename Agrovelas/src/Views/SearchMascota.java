@@ -181,7 +181,7 @@ public void verDatos(){
                 registros[2] = rs.getString("edad");
                 registros[3] = rs.getString("raza");
                 registros[4] = rs.getString("especie");
-                registros[4] = rs.getString("peso");
+                registros[5] = rs.getString("peso");
 
                 model.addRow(registros);
             }
