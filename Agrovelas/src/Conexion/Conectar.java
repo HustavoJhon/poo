@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class Conectar {
     // Ruta a la base de datos
-    private static final String URL = "jdbc:ucanaccess://D:\\poo\\Agrovelas\\BD\\BDAlmacen1.accdb"; 
+    private static final String URL = "jdbc:ucanaccess://C:\\Users\\hustavo\\Development\\JAVA\\poo\\Agrovelas\\BD\\AgrovelasDB.accdb"; 
     private static final String DRIVER = "net.ucanaccess.jdbc.UcanaccessDriver";
     private Connection conexion = null;
 
