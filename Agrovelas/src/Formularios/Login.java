@@ -35,7 +35,6 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         TxtNivelAcceso = new javax.swing.JTextField();
 
@@ -50,7 +49,7 @@ public class Login extends javax.swing.JFrame {
                 BtnInicioSesionActionPerformed(evt);
             }
         });
-        Bg.add(BtnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 150, 60));
+        Bg.add(BtnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 150, 60));
 
         jLabel3.setBackground(new java.awt.Color(255, 0, 51));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -63,17 +62,21 @@ public class Login extends javax.swing.JFrame {
                 BtnCancelarActionPerformed(evt);
             }
         });
-        Bg.add(BtnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 119, 55));
+        Bg.add(BtnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 119, 60));
 
+        TxtPswd.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         TxtPswd.setText("1234");
-        Bg.add(TxtPswd, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 254, -1));
+        Bg.add(TxtPswd, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 280, -1));
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Clave");
-        Bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, -1, -1));
+        Bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, -1, -1));
 
+        TxtUser.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         TxtUser.setText("Admin");
-        Bg.add(TxtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 254, -1));
+        Bg.add(TxtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 280, -1));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Usuario");
         Bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, -1));
 
@@ -83,62 +86,52 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/logo.png"))); // NOI18N
         jLabel5.setText("Agrovelas");
 
-        jLabel6.setText("<html>Este es un texto largo que se ajustará automáticamente en varias líneas</html>");
         jLabel6.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        jLabel6.setText("Este sistema permite el acceso ");
+        jLabel6.setText("Accede al cuidado que tu mascota merece.");
         jLabel6.setToolTipText("");
-
-        jLabel6.setText("<html>Este es un texto largo que se ajustará automáticamente en varias líneas</html>");
-        jLabel8.setText(" ");
-        jLabel8.setToolTipText("");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(218, 218, 218)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 12, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(133, 133, 133)
                 .addComponent(jLabel5)
-                .addGap(35, 35, 35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(145, Short.MAX_VALUE))
         );
 
-        Bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 400));
+        Bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 410));
 
         jLabel4.setText("Nivel  de acceso:");
-        Bg.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 100, -1));
-        Bg.add(TxtNivelAcceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 250, -1));
+        Bg.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 100, -1));
+
+        TxtNivelAcceso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Bg.add(TxtNivelAcceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 280, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Bg, javax.swing.GroupLayout.DEFAULT_SIZE, 596, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(Bg, javax.swing.GroupLayout.DEFAULT_SIZE, 608, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(Bg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
         );
 
         pack();
@@ -241,7 +234,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
