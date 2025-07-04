@@ -103,39 +103,62 @@ public void vaciarTabla() {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/logo.png"))); // NOI18N
         jLabel1.setText("REGISTRO DE MASCOTAS");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Código:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 80, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 80, -1));
 
-        jLabel3.setText("Nombre de mascota:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setText("Nombre:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("Edad :");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel5.setText("Raza :");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
 
+        TxtNombreMascota.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         TxtNombreMascota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtNombreMascotaActionPerformed(evt);
             }
         });
-        jPanel1.add(TxtNombreMascota, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 200, -1));
-        jPanel1.add(TxtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 200, -1));
-        jPanel1.add(TxtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 200, -1));
-        jPanel1.add(TxtRaza, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 200, -1));
+        jPanel1.add(TxtNombreMascota, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 350, -1));
 
+        TxtEdad.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel1.add(TxtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 350, -1));
+
+        TxtCodigo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        TxtCodigo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtCodigoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(TxtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 350, -1));
+
+        TxtRaza.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel1.add(TxtRaza, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 350, -1));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel6.setText("Especie:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, -1, -1));
-        jPanel1.add(TxtEspecie, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 200, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
 
+        TxtEspecie.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel1.add(TxtEspecie, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 350, -1));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel7.setText("Peso:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
-        jPanel1.add(TxtPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 200, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
+
+        TxtPeso.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jPanel1.add(TxtPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 350, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -155,61 +178,62 @@ public void vaciarTabla() {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 650, 250));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 650, 280));
 
+        BtnNuevo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BtnNuevo.setText("Nuevo");
         BtnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnNuevoActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 660, -1, -1));
+        jPanel1.add(BtnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 650, 120, 50));
 
+        BtnGrabar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BtnGrabar.setText("Grabar");
         BtnGrabar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnGrabarActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnGrabar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 660, -1, -1));
+        jPanel1.add(BtnGrabar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 650, 120, 50));
 
+        BtnModificar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BtnModificar.setText("Modificar");
         BtnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnModificarActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 660, -1, -1));
+        jPanel1.add(BtnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 650, 120, 50));
 
+        BtnEliminar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BtnEliminar.setText("Eliminar");
         BtnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnEliminarActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 660, -1, -1));
+        jPanel1.add(BtnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 650, 120, 50));
 
+        BtnCerrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BtnCerrar.setText("Cerrar");
         BtnCerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnCerrarActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, -1, -1));
+        jPanel1.add(BtnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 650, 120, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 759, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -316,6 +340,10 @@ public void vaciarTabla() {
         TxtPeso.setText(jTable1.getValueAt(fila, 5).toString());
     } // TODO add your handling code here:
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void TxtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCodigoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCodigoActionPerformed
 
     /**
      * @param args the command line arguments
