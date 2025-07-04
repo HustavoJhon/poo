@@ -41,7 +41,7 @@ public class FrmClientes extends javax.swing.JFrame {
     }
     public void vaciarTabla(){
         DefaultTableModel Modelo = (DefaultTableModel) jTable1.getModel();
-        String titulos[] = {"ID","NOMBRE_PROVEEDOR","TELEFONO","DIRECCION","CORREO"};
+        String titulos[] = {"ID","APELLIDO","NOMBRE","DNI","DIRECCION"};
         Modelo = new DefaultTableModel(null,titulos);
         jTable1.setModel(Modelo);
     }
